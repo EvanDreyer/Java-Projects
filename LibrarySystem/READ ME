@@ -1,0 +1,15 @@
+Library System
+
+This is a Java console program I built to simulate a simple library. It lets you add books, borrow books, and return books through a text-based menu, keeping track of everything in memory while the program is running.
+
+The core of the program is a HashMap called library, where each book title is the key and the value is a Book object that stores the title, author, and quantity. Using a HashMap makes it super easy to check if a book already exists and quickly access or update its details.
+
+When the program starts, it shows a menu with four options: add books, borrow books, return books, or exit. The menu is wrapped in a do-while loop so it keeps running until the user chooses to quit. Each option calls a separate method (addBooks, borrowBooks, or returnBooks) to keep the code organized and easy to read.
+
+Adding books: The program asks for the title, author, and quantity. If the book already exists, it just increases the quantity. If it’s new, it creates a new Book object and adds it to the library. This ensures that the library always has an accurate count of how many copies are available.
+
+Borrowing books: You enter the title and number of copies to borrow. The program checks if the book exists and if there are enough copies. If everything’s good, it subtracts the quantity. Otherwise, it prints an error so you know the request can’t be fulfilled.
+
+Returning books: Works similarly to borrowing. The program asks for the title and quantity being returned. If the book exists in the library, it adds the quantity back. If not, it warns you that the title is invalid.
+
+The Book class is a small helper class that stores all the info about a book. It has methods to add or subtract quantities and get the current quantity. This keeps the main program clean and focused on the user interface and library logic.
