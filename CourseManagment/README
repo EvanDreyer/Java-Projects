@@ -1,0 +1,4 @@
+This is a simple Java console application that simulates a basic course enrollment and grade tracking system.  
+It allows users to add courses, enroll students, assign grades, and view averages or course details.  
+
+This project was created to practice object-oriented programming concepts such as classes, objects, and lists, as well as handling user input and basic data management in Java.
